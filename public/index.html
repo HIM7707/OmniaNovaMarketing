@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" defer />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -69,7 +70,7 @@
         </nav>
         <!-- This is Logo Top Bar -->
         <nav class="flex justify-around  bg-neutral-800 group-hover:bg-black h-24  p-2">
-            <img class="" src="./images/omninova_LOGO-removebg-preview.png">
+            <img class="" src="../images/omninova_LOGO-removebg-preview.png">
             <ul class="flex">
                 <li class="bg-transparent  hidden md:inline-block p-8"><a
                         class="text-white hover:text-orange-600  font-montserrat text-[14px] font-semibold transition delay-100 transform hover:scale-105  "
@@ -96,7 +97,7 @@
             <!-- This is the side bar code -->
             <div id="sidebar" class=" fixed inset-0 bg-black z-50 w-2/3 hidden">
                 <div class="firstline flex justify-between px-5 pt-4">
-                    <img class="h-16" src="./images/omninova_LOGO-removebg-preview.png">
+                    <img class="h-16" src="../images/omninova_LOGO-removebg-preview.png">
                     <button id="close-btn" class="material-symbols-outlined text-white hover:text-orange-600 transition delay-100 transform hover:scale-150">
                         close
                     </button>
@@ -123,17 +124,17 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide relative">
                     
-                    <img src="/images/Algora-Marketing-d.o.o.jpg" alt="Description of the image">
+                    <img src="../images/Algora-Marketing-d.o.o.jpg" alt="Description of the image">
                     
                     <div class="absolute inset-0 pl-10 text-left">
-                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins text-[70px] font-bold pt-14 tracking-wide">We are</p>
-                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins text-[70px] font-bold  tracking-wide">Omnia Nova Marketing</p>
+                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins md:text-[70px] text-[55px] font-bold pt-14 tracking-wide">We are</p>
+                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins md:text-[70px] text-[55px] font-bold  tracking-wide">Omnia Nova Marketing</p>
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <img src="/images/Algora-Marketing-1.jpg" alt="Description of the image">
+                    <img src="../images/Algora-Marketing-1.jpg" alt="Description of the image">
                     <div class="absolute inset-0 pl-10 text-left">
-                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins text-[70px] font-bold pt-14 tracking-wide">We Create your Recognition</p>
+                        <p class=" bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-600 font-poppins md:text-[70px] text-[55px] font-bold pt-14 tracking-wide">We Create your Recognition</p>
                         <p class="font-poppins font-medium text-[20px] pt-14 pl-16 text-white">Based on Expert </p>
                         <p class="font-poppins font-medium text-[20px] text-white pt-4 pl-16">Market Research</p>
                     </div>
@@ -183,7 +184,7 @@
 
     </div>
     <!-- this is 3rd introduction-->
-    <div  class=" bg-fixed bg-cover bg-center  " style="background-image: url('./images/3rdslide.jpg');">
+    <div  class=" bg-fixed bg-cover bg-center  " style="background-image: url('../images/3rdslide.jpg');">
         <div class="text-center text-[45px] font-bold font-poppins text-white pt-48">WE TURN YOUR WISHES INTO REALITY</div>
         <div class="text-center font-Montserrat text-[20px] text-white pt-14">WE COOPERATE!</div>
         <div class="text-center pt-11 py-32">
@@ -271,7 +272,7 @@
     </div>
     <!-- This is the final query FOrm -->
     
-        <div id="Contactus" class="bg-fixed bg-cover md:bg-center px-4 md:px-44  text-Black  " style="background-image: url('./images/Last-query-form-bg.jpg');">
+        <div id="Contactus" class="bg-fixed bg-cover md:bg-center px-4 md:px-44  text-Black  " style="background-image: url('../images/Last-query-form-bg.jpg');">
             <div class="text-[55px] font-poppins pt-28 font-extrabold text-white text-center">Contact Us</div>
             <div class="text-[20px] font-Montserrat font-medium text-white pt-8 text-center">Do you want us to prepare an offer for you or do you want to ask us something? Fill out the form and we will try to answer as soon as possible. We will look forward to hearing from you.</div>
             <div class="md:grid md:grid-cols-2 pt-16 md:gap-4">
@@ -316,29 +317,30 @@
                 </div>
                 <!-- This is the Query form main -->
                 <div class="pt-16 md:pt-0">
+
                     <div class="text-[40px] font-poppins font-extrabold text-orange-600">Write to Us</div>
                     <div class="font-Montserrat text-[20px] font-medium text-white">Required Field Marked as <span class="text-red-500">*</span></div>
                     <div>
                         <label class="block text-white font-poppins text-sm font-bold mb-2" for="Name">
                             First Name and Last Name<span class="text-red-500">*</span> </label>
-                        <input class=" appearance-none border-black lg:w-[400px] xl:w-[530px] w-[300px] h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" >
+                        <input id="name" class=" appearance-none border-black lg:w-[400px] xl:w-[530px] w-[300px] h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="name"   required >
                     </div>
                     <div class="pt-8">
-                        <label class="block text-white font-poppins text-sm font-bold mb-2" for="company" >
-                            Company<span class="text-red-500">*</span> </label>
-                        <input class=" appearance-none border-black lg:w-[400px] xl:w-[530px]  w-[300px] h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" >
+                        <label class="block text-white font-poppins text-sm font-bold mb-2" for="Email Address" >
+                            Email Address<span class="text-red-500">*</span> </label>
+                        <input id="email" class=" appearance-none border-black lg:w-[400px] xl:w-[530px]  w-[300px] h-[50px] py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email"  required >
                     </div>
                     <div class="pt-8">
                         <label class="block text-white font-poppins text-sm font-bold mb-2 " for="user_message">
                             Your Message<span class="text-red-500">*</span> </label>
-                        <textarea class=" appearance-none border-black lg:w-[400px] xl:w-[530px] w-[300px] h-[200px] py-2 px-3 pt-0 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-56" ></textarea>
+                        <textarea id="query" class=" appearance-none border-black lg:w-[400px] xl:w-[530px] w-[300px] h-[200px] py-2 px-3 pt-0 text-gray-700 leading-tight focus:outline-none focus:shadow-outline max-h-56" type="query"   required></textarea>
                     </div>
                     <div class="flex pt-6">
                         <input id="checkbox" type="checkbox" class="form-checkbox h-5 w-5 text-blue-600" />
                         <label for="checkbox" class="ml-2 text-white  font-Montserrat text-[14px]">I Agree with the Processing of my personal Data<span class="text-red-500">*</span></label>
                     </div>
                     <div class="pt-12 pb-36">
-                        <button class="bg-orange-600 rounded px-16 py-4 font-poppins text-[16px] font-medium text-white hover:bg-red-600 transition delay-100 transform hover:scale-105 ">
+                        <button id="submitbtn" class="bg-orange-600 rounded px-16 py-4 font-poppins text-[16px] font-medium text-white hover:bg-red-600 transition delay-100 transform hover:scale-105 ">
                             Send
                         </button>
                     </div>
@@ -380,7 +382,52 @@
         });
         cancelbtn.addEventListener('click',function(){
             sidebar.classList.toggle('hidden');
-        })
+        });
+
+        // THis is the form submition section -> HTTP post request 
+        
+            const submitButton = document.getElementById('submitbtn');
+
+            submitButton.addEventListener('click', function() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const query = document.getElementById('query').value;
+            const agreeCheckbox = document.getElementById('checkbox');
+
+            if (!name || !email || !query || !agreeCheckbox.checked) {
+                alert('Please fill out all the fields and agree to the processing of your personal data.');
+                return;
+            }
+
+            const requestData = {
+                name: name,
+                email: email,
+                query: query
+            };
+
+            //console.log(requestData);
+
+            fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(requestData)
+            })
+            .then(response => {
+                // Handle response
+                console.log('Response received from server:', response);
+                // Optionally, display a success message to the user
+                alert('Your query has been submitted successfully!');
+            })
+            .catch(error => {
+            // Handle error
+            console.error('Error sending request to server:', error);
+            // Optionally, display an error message to the user
+            alert('Failed to submit your query. Please try again later.');
+        });
+    });
+
         
     </script>
 

@@ -6,12 +6,17 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./style.css -o ./dist/output.css --watch"
+    "build": "npx tailwindcss -i ./public/style.css -o ./dist/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "path": "^0.12.7",
     "swiper": "^11.1.0"
   }
 }
