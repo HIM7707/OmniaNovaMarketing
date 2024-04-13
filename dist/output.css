@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -664,10 +668,6 @@ video {
 
 .w-\[300px\] {
   width: 300px;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .transform {
@@ -994,10 +994,6 @@ video {
   font-size: 55px;
 }
 
-.text-\[70px\] {
-  font-size: 70px;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1006,28 +1002,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[35px\] {
-  font-size: 35px;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
-}
-
-.text-\[50px\] {
-  font-size: 50px;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -1119,10 +1093,6 @@ video {
 .text-zinc-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 91 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .transition {
